@@ -14,8 +14,8 @@ namespace member_space
     public partial class Form14 : Form
     {
         private List<Feedback> feedbackList = new List<Feedback>();
-        private DatabaseConnection dbConnection = new DatabaseConnection(); // Instantiate the DatabaseConnection class
-        private dataBaseHelper dbHelper = new dataBaseHelper(); // Instantiate the dataBaseHelper class
+        private DatabaseConnection dbConnection = new DatabaseConnection(); 
+        private dataBaseHelper dbHelper = new dataBaseHelper(); 
 
         public Form14()
         {
@@ -42,13 +42,13 @@ namespace member_space
                 Message = textBoxMessage.Text
             };
 
-            // Insert feedback into the database
+            
             InsertFeedbackToDatabase(newFeedback);
 
-            // Clear the message box
+            // Clears the message box
             textBoxMessage.Clear();
 
-            // Optionally, show a confirmation message
+            
             MessageBox.Show("Feedback Sent!");
         }
 
@@ -56,7 +56,7 @@ namespace member_space
         {
             try
             {
-                // Prepare SQL query to insert feedback into the 'feedback' table
+               
                 string query = "INSERT INTO feedback (Type, Message) VALUES (@Type, @Message)";
 
                 // Use the connection from DatabaseConnection class
@@ -69,7 +69,7 @@ namespace member_space
                         cmd.Parameters.AddWithValue("@Type", feedback.Type);
                         cmd.Parameters.AddWithValue("@Message", feedback.Message);
 
-                        cmd.ExecuteNonQuery(); // Execute the query
+                        cmd.ExecuteNonQuery(); 
                     }
                 }
             }

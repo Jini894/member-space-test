@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.dgvCompanyOutcomes = new System.Windows.Forms.DataGridView();
-            this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
-            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
-            this.btnFilter = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCompanyOutcomes)).BeginInit();
             this.SuspendLayout();
@@ -44,29 +41,6 @@
             this.dgvCompanyOutcomes.Name = "dgvCompanyOutcomes";
             this.dgvCompanyOutcomes.Size = new System.Drawing.Size(519, 298);
             this.dgvCompanyOutcomes.TabIndex = 0;
-            // 
-            // dtpStartDate
-            // 
-            this.dtpStartDate.Location = new System.Drawing.Point(127, 355);
-            this.dtpStartDate.Name = "dtpStartDate";
-            this.dtpStartDate.Size = new System.Drawing.Size(200, 20);
-            this.dtpStartDate.TabIndex = 1;
-            // 
-            // dtpEndDate
-            // 
-            this.dtpEndDate.Location = new System.Drawing.Point(446, 355);
-            this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(200, 20);
-            this.dtpEndDate.TabIndex = 2;
-            // 
-            // btnFilter
-            // 
-            this.btnFilter.Location = new System.Drawing.Point(548, 411);
-            this.btnFilter.Name = "btnFilter";
-            this.btnFilter.Size = new System.Drawing.Size(75, 23);
-            this.btnFilter.TabIndex = 3;
-            this.btnFilter.Text = "button1";
-            this.btnFilter.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -83,9 +57,6 @@
             this.BackColor = System.Drawing.Color.Salmon;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnFilter);
-            this.Controls.Add(this.dtpEndDate);
-            this.Controls.Add(this.dtpStartDate);
             this.Controls.Add(this.dgvCompanyOutcomes);
             this.Name = "CompanyOutcomes";
             this.Text = "CompanyOutcomes";
@@ -97,9 +68,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvCompanyOutcomes;
-        private System.Windows.Forms.DateTimePicker dtpStartDate;
-        private System.Windows.Forms.DateTimePicker dtpEndDate;
-        private System.Windows.Forms.Button btnFilter;
         private System.Windows.Forms.Panel panel1;
     }
 }

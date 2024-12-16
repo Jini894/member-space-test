@@ -87,7 +87,7 @@ namespace member_space
                         string interests = reader["Interests"].ToString();
                         string intentions = reader["Intentions"].ToString();
 
-                        // Assuming you have Labels or TextBoxes to display the Interests and Intentions
+                     
                         labelInterests.Text = "Interests: " + interests;
                         labelIntentions.Text = "Intentions: " + intentions;
                     }

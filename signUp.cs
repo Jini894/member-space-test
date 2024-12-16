@@ -46,8 +46,8 @@ namespace member_space
                 string.IsNullOrEmpty(dateTimePicker2.ToString()) ||
                 combobxSecurityQues.SelectedItem == null ||
                 string.IsNullOrEmpty(textbSecurityQuesAns.Text) ||
-                string.IsNullOrEmpty(txtbInterests.Text) || // New field
-                string.IsNullOrEmpty(txtbIntentions.Text)) // New field
+                string.IsNullOrEmpty(txtbInterests.Text) || 
+                string.IsNullOrEmpty(txtbIntentions.Text)) 
             {
                 MessageBox.Show("All fields are required.", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -68,8 +68,8 @@ namespace member_space
                         combobxSecurityQues.SelectedItem.ToString(),
                         textbSecurityQuesAns.Text,
                         dateTimePicker2.ToString(),
-                        txtbInterests.Text, // New field
-                        txtbIntentions.Text, // New field
+                        txtbInterests.Text, // New Interests
+                        txtbIntentions.Text, // Add intentions
                         out errorMessage);
 
                     if (isInserted)
@@ -82,8 +82,8 @@ namespace member_space
                         textBxLastname.Text = "";
                         combobxSecurityQues.SelectedItem = null;
                         textbSecurityQuesAns.Text = "";
-                        txtbInterests.Text = ""; // Clear Interests
-                        txtbIntentions.Text = ""; // Clear Intentions
+                        txtbInterests.Text = ""; 
+                        txtbIntentions.Text = ""; 
                         dateTimePicker2.ToString();
 
                         MessageBox.Show("Your account has been successfully created", "Registration Success", MessageBoxButtons.OK);

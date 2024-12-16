@@ -23,7 +23,7 @@ namespace member_space
             {
                 new Module { ModuleID = 1, Title = "Art of Watches", Description = "This module will explain how watches are made and the several intricacies that is engineered within them" },
                 new Module { ModuleID = 2, Title = "Coding 101", Description = "A short intro into the world of developers. How code is made and the process behind making the very apps you use to browse the internet!" },
-                new Module { ModuleID = 3, Title = "Forms", Description = "Help" }
+                new Module { ModuleID = 3, Title = "Forms", Description = "How to design Forms" }
             };
 
             // Set the data source of the ListBox to this list

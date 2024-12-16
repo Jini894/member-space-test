@@ -33,13 +33,12 @@ namespace member_space
 
             try
             {
-                // Use the connection from DatabaseConnection class
+                
                 using (MySqlConnection conn = dbConnection.get_Connection())
                 {
-                    conn.Open(); // Open the connection
+                    conn.Open(); 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        // Execute the query and retrieve the data
                         using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
                             while (reader.Read())
@@ -51,7 +50,6 @@ namespace member_space
                                     Message = reader.GetString("Message")
                                 };
 
-                                // Add the feedback to the list
                                 feedbackList.Add(feedback);
                             }
                         }
